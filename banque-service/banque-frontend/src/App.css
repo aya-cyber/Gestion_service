@@ -1,0 +1,168 @@
+/* Style global */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://akanea.com/wp-content/uploads/2022/10/logiciel-gestion-de-stock.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Barre de navigation */
+nav {
+  background: linear-gradient(to right, #0056b3, #007bff);
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.5s ease;
+}
+
+nav:hover {
+  background: linear-gradient(to right, #004080, #0056b3);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: #003366;
+  transform: translateY(-3px);
+}
+
+/* Conteneur principal */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Légère transparence */
+  border-radius: 10px;
+}
+
+/* Formulaires */
+form {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparence */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 400px;
+}
+
+form input, form select, form button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* Comptes */
+.comptes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.compte-card {
+  background-color: rgba(255, 255, 255, 0.6); /* Plus transparent */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compte-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Boutons harmonisés */
+.compte-card button {
+  width: 48%;
+  margin: 5px 1%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.compte-card button:first-child {
+  background-color: #4e1818; /* Rouge pour supprimer */
+  color: white;
+}
+
+.compte-card button:first-child:hover {
+  background-color: #d32da3;
+  transform: translateY(-3px);
+}
+
+.compte-card button:last-child {
+  background-color: #5bc0de; /* Bleu clair pour Voir les transactions */
+  color: white;
+}
+
+.compte-card button:last-child:hover {
+  background-color: #31b0d5;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form, .compte-card, .transactions-list li, h1 {
+  animation: fadeIn 0.5s ease-out;
+}

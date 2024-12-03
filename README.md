@@ -1,67 +1,58 @@
-Application Bancaire avec GraphQL et React
-Description
-Ce projet implémente une application bancaire avec un backend basé sur Spring Boot et GraphQL pour la gestion des comptes et des transactions. Le frontend est développé avec React et utilise Apollo Client pour interagir avec le backend. Les utilisateurs peuvent :
+# Application Bancaire avec GraphQL et React
 
-Visualiser la liste des comptes bancaires.
-Consulter les transactions associées à chaque compte.
-Ajouter des comptes bancaires et des transactions.
-Fonctionnalités
-Backend (Spring Boot + GraphQL)
-Gestion des Comptes :
-Création, lecture, mise à jour et suppression des comptes bancaires.
-Filtrage des comptes par type (COURANT ou ÉPARGNE).
-Affichage des statistiques des comptes (nombre total de comptes, total des soldes, moyenne des soldes).
-Gestion des Transactions :
-Ajout de transactions (dépôts et retraits) à un compte bancaire.
-Affichage des transactions associées à un compte spécifique.
-Statistiques des transactions (total des dépôts et retraits).
-Frontend (React + Apollo Client)
-Page d'Accueil : Affiche la liste complète des comptes bancaires.
-Page des Transactions : Affiche les transactions liées à un compte spécifique.
-Formulaire d'Ajout de Compte : Permet à l'utilisateur d'ajouter un nouveau compte bancaire.
-Formulaire d'Ajout de Transaction : Permet à l'utilisateur d'ajouter une transaction (dépôt ou retrait) à un compte spécifique.
-Prérequis
-Backend (Spring Boot + GraphQL)
-Java 21
-Maven
-Base de données (à configurer selon vos besoins)
-Frontend (React + Apollo Client)
-Node.js
-npm ou yarn
-Installation et Lancement
-Backend (Spring Boot + GraphQL)
-Clonez le dépôt du backend.
+## Description
 
-Assurez-vous d'avoir Java 21 et Maven installés.
+Ce projet implémente une application bancaire avec un **backend** en **Spring Boot** et **GraphQL** pour gérer les comptes et les transactions. Le **frontend** est développé en **React** avec **Apollo Client** pour interagir avec le backend. L'application permet aux utilisateurs de :
 
-Configurez la base de données (voir fichier application.properties ou application.yml pour les paramètres de connexion).
+- Voir la liste des comptes bancaires.
+- Voir les transactions associées à chaque compte.
+- Ajouter des comptes bancaires et des transactions.
 
-Exécutez le backend avec la commande Maven suivante :
+## Fonctionnalités
 
-bash
-Copier le code
-mvn spring-boot:run
-Le backend sera accessible via http://localhost:8080.
+### Backend (Spring Boot + GraphQL)
 
-Frontend (React + Apollo Client)
-Clonez le dépôt du frontend.
+#### Gestion des Comptes :
+- Création, lecture, suppression des comptes bancaires.
+- Filtrage des comptes par type (COURANT ou ÉPARGNE).
+- Affichage des statistiques des comptes (nombre, total et moyenne des soldes).
 
-Assurez-vous d'avoir Node.js installé.
+#### Gestion des Transactions :
+- Ajout de transactions (DÉPÔT et RETRAIT) à un compte bancaire.
+- Affichage des transactions d'un compte spécifique.
+- Statistiques des transactions (total des dépôts et retraits).
 
-Installez les dépendances avec npm ou yarn :
+### Frontend (React + Apollo Client)
 
-bash
-Copier le code
-npm install
-ou
+- **Page d'Accueil** : Affiche la liste de tous les comptes bancaires.
+- **Page des Transactions** : Affiche les transactions d'un compte spécifique.
+- **Formulaire d'Ajout de Compte** : Permet à l'utilisateur d'ajouter un compte bancaire.
+- **Formulaire d'Ajout de Transaction** : Permet à l'utilisateur d'ajouter une transaction à un compte spécifique.
 
-yarn install
+## Prérequis
+
+### Backend (Spring Boot + GraphQL)
+- **Java 21**
+- **Maven**
+- Base de données (à configurer selon vos besoins)
+
+### Frontend (React + Apollo Client)
+- **Node.js**
+- **npm** ou **yarn**
+
+## Installation et Lancement
+
+### Backend (Spring Boot + GraphQL)
+
+1. Clonez le dépôt du backend.
+2. Assurez-vous d'avoir **Java 21** et **Maven** installés.
+3. Configurez la base de données (voir fichier `application.properties` ou `application.yml` pour les paramètres de connexion).
+4. Exécutez le backend avec la commande Maven suivante :
+
+   ```bash
+   
+   mvn spring-boot:run
+
+https://github.com/user-attachments/assets/e3a2c8c8-8a62-4e43-a1c0-78e0f47bd70a
 
 
-npm start
-ou
-
-bash
-Copier le code
-yarn start
-Le frontend sera accessible via http://localhost:3000.
